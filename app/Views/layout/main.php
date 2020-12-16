@@ -41,7 +41,7 @@
 
                     <!-- Logo container-->
                     <div class="logo">
-                        <a href="index.html" class="logo">
+                        <a href="" class="logo">
                             <img src="<?= base_url() ?>/assets/images/logo-sm.png" alt="" height="22" class="logo-small">
                             <img src="<?= base_url() ?>/assets/images/logo.png" alt="" height="16" class="logo-large">
                         </a>

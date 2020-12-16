@@ -15,12 +15,17 @@ namespace App\Controllers;
  */
 
 use App\Models\Joindata;
+use App\Models\Modeljenisdata;
 use CodeIgniter\Controller;
 
 use App\Models\Modelkabupaten;
 use App\Models\Modelkampung;
 use App\Models\Modelkecamatan;
-
+use App\Models\Modelriwayatkab;
+use App\Models\Modelsatker;
+use App\Models\Modelsatuan;
+use App\Models\Modelsektor;
+use App\Models\Modelsubsektor;
 
 class BaseController extends Controller
 {
@@ -52,6 +57,13 @@ class BaseController extends Controller
 		$this->kec = new Modelkecamatan;
 		$this->kp = new Modelkampung();
 		$this->joda = new Joindata();
+		$this->satker = new Modelsatker();
+		$this->sek = new Modelsektor();
+		$this->subsek = new Modelsubsektor();
+		$this->sat = new Modelsatuan();
+		$this->jenisdata = new Modeljenisdata();
+		$this->rkab = new Modelriwayatkab();
+
 	}
 
 }
